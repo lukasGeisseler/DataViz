@@ -10,4 +10,4 @@ This repository consists of different examples of (custom) DV-Codes:
 
 - [cytoscapejs_graph](code/cytoscapejs_graph/index.html) is a cytoscape.js example of a infinitely running physics simulation (cola) of a graph with nodes and edges. The data was extracted with Llama3 from wikipedia texts and enriched with wikidata querries. The visualization is interactive, which means it is possible to drag and stick, release and remove nodes. Additional it is possible to save the graph as PDF. This example uses beside cytoscape.js the following packages [js-pdf-export](https://github.com/cytoscape/cytoscape.js-pdf-export.git), [js-cola](https://github.com/cytoscape/cytoscape.js-cola.git)
 
-![cytoscapejs_graph_example](https://github.com/lukasGeisseler/DataViz/blob/main/plots/cytoscapejs_graph.png?raw=true)
+![cytoscapejs_graph_example](https://github.com/lukasGeisseler/DataViz/blob/main/plots/Cytoscapejs_graph.png?raw=true)
