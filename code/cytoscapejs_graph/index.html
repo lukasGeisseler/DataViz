@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!-- This code is for demonstration purposes only.  You should not hotlink to Github, Rawgit, or files from the Cytoscape.js documentation in your production apps. -->
+<!-- adapted from https://github.com/cytoscape/cytoscape -->
+
+<html>
+<head>
+<link href="style.css" rel="stylesheet" />
+<meta charset=utf-8 />
+<meta name="viewport" content="user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, minimal-ui">
+<title>Compound nodes</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.28.1/cytoscape.umd.js"></script>
+
+<script src="https://unpkg.com/jspdf@latest/dist/jspdf.umd.min.js"></script>
+<script src="https://rawgit.com/yWorks/svg2pdf.js/master/dist/svg2pdf.umd.js"></script>
+
+<script src="https://unpkg.com/layout-base/layout-base.js"></script>
+    <script src="https://unpkg.com/cose-base/cose-base.js"></script>
+    <script src="https://unpkg.com/cytoscape-fcose/cytoscape-fcose.js"></script>
+    <script src="https://unpkg.com/webcola/WebCola/cola.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/cytoscape-cola@2.5.1/cytoscape-cola.min.js"></script>
+    <script src="https://unpkg.com/file-saver@2.0.5/dist/FileSaver.min.js"></script>
+    <script src="https://unpkg.com/cytoscape-pdf-export@0.0.2/dist/cytoscape-pdf-export-cjs.js"></script>
+    <script src="https://unpkg.com/cytoscape-pdf-export@0.0.2/dist/cytoscape-pdf-export.js"></script>
+    
+    <script src="https://unpkg.com/cytoscape-pdf-export@0.0.2/dist/main.js"></script>
+
+    <style>
+			body {
+				font-family: Futura, helvetica neue, helvetica, liberation sans, arial, sans-serif;
+				font-size: 8px;
+			}
+
+			#cy {
+				position: absolute;
+				left: 0;
+				top: 80px;
+				bottom: 0;
+				right: 0;
+				z-index: 999;
+				background-color: #ffffff;
+        /* width:1240px;
+        /* height: 1754px;
+        /* border:1px solid black;
+			}
+
+		 h1 {
+				opacity: 0.5;
+				font-size: 1em;
+				font-weight: bold;
+			}
+		</style>
+
+</head>
+  <body>
+  <div> 
+    <button id="saveAsPdf" style="font-family:Futura; color: black; background-color: #ffffff ; width: 100px; height: 30px; float: right;" onclick="saveAsPdf()">Save PDF</button> 
+    <h1>Morteratsch Graph</h1>
+    <b>click and drag:</b> move node and fix its position <b>double click:</b> release fixed position <b>right click:</b> Remove element (until reload)
+    
+  <div id="cy"></div>
+  <!-- Load application code at the end to ensure DOM is loaded -->
+  <script src="code.js"></script>
+  </body>
+</html>
